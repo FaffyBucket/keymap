@@ -1,12 +1,10 @@
 /*
 ************************************************************************************************
-* keymap                                                                                       *
-*                                                                                              *
-* Version:             9.1 (version history at the bottom of this script)                      *
-* AutoHotkey Version:  1.1                                                                     *
-* Language:            English                                                                 *
-* Platform:            Windows Vista, 7, 8                                                     *
-* Author:              www.twitter.com/matthiew                                                *
+* Version:        9.0 (version history at the bottom of this script)                           *
+* AutoHotkey Version: 1.1                                                                      *
+* Language:       English                                                                      *
+* Platform:       Windows Vista, 7, 8                                                          *
+* Author:         Jive Turkey (message me on the AHK forums or www.twitter.com/matthiew)       *
 *                                                                                              *
 * Script Function:                                                                             *
 * 1. Maps "Num Lock" key to open/activate/close calc.exe.                                      *
@@ -48,33 +46,22 @@ AppsKey::AppsKey
 SetNumLockState, AlwaysOn
 NumLock::
 	SetNumLockState, AlwaysOn
-	IfWinNotExist, ahk_exe vmconnect.exe
+	IfWinExist, Calculator
 		{
-		#MaxHotkeysPerInterval 70
-		IfWinExist, Calculator
+		IfWinActive, Calculator
 			{
-			IfWinActive, Calculator
-				{
-				WinClose, Calculator
-				}
-			else
-				{
-				WinActivate, Calculator
-				}
+			WinClose, Calculator
 			}
 		else
 			{
-			Run calc
 			WinActivate, Calculator
 			}
 		}
 	else
-		#MaxHotkeysPerInterval 2000
-		IfWinActive, ahk_exe vmconnect.exe
-			{
-;			Do nothing while Hyper-V Virtual Machine Connection is active because
-;			it will send hundreds of Num Lock key presses.
-			}
+		{
+		Run calc
+		WinActivate, Calculator
+		}
 	return
 
 
@@ -185,14 +172,3 @@ AppsKey & Ctrl::
 !=::Volume_Up    ; Assigns "Volume_Up" to "Alt"+"=".
 !-::Volume_Down    ; Assigns "Volume_Down" to "Alt"+"-".
 !0::Volume_Mute    ; Assigns "Volume_Mute" to "Alt"+"0".
-
-
-
-
-/*
-************************************************************************************************
-keymap version history:
-9.1 - Updated Function 1.
-9.0 - Added media key shortcuts.
-************************************************************************************************
-*/
