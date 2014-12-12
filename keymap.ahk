@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             9.2 (version history at the bottom of this script)                      *
+* Version:             9.4 (version history at the bottom of this script)                      *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            7, 8                                                                    *
@@ -196,14 +196,10 @@ keymap known issues:
 Function 9 - When a Windows Explorer window is active, and "Autohotkey" is the title of that
              window, the Media_Play_Pause command doesn't work. Seems to be a bug in AHK, not
 			 this script.
-			 
-
-TO DO:
- - Reorganise file structure.
- - Compress "AHK icons.psd".
 
 
 keymap version history:
+9.4 - Reorganised file struction. Created new, optimised "A icon.psd"
 9.3 - Added known issues.
     - Added TO DO.
 9.2 - Updated Function 8 to resolve a conflict with Firefox's built-in autocomplete.
