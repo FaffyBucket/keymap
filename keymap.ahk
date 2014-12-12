@@ -2,10 +2,10 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             9.1 (version history at the bottom of this script)                      *
+* Version:             9.2 (version history at the bottom of this script)                      *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
-* Platform:            Windows Vista, 7, 8                                                     *
+* Platform:            7, 8                                                                    *
 * Author:              www.twitter.com/matthiew                                                *
 *                                                                                              *
 * Script Function:                                                                             *
@@ -168,6 +168,7 @@ AppsKey & Ctrl::
 ; 8. Maps Ctrl+Shift+/ to autocomplete URLs that end with ".com.au".
 
 ^+/::
+	Send {Delete}
 	Send ^a
 	Send ^x
 	Send www.^v.com.au
@@ -192,6 +193,8 @@ AppsKey & Ctrl::
 /*
 ************************************************************************************************
 keymap version history:
+9.2 - Updated Function 8 to resolve a conflict with Firefox's built-in autocomplete.
+    - Removed Windows Vista as a supported platform. It probably works, but is no longer used.
 9.1 - Updated Function 1.
 9.0 - Added media key shortcuts.
 ************************************************************************************************
