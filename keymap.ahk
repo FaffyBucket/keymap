@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             9.4 (version history at the bottom of this script)                      *
+* Version:             9.5 (version history at the bottom of this script)                      *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            7, 8                                                                    *
@@ -182,7 +182,16 @@ AppsKey & Ctrl::
 
 !.::Media_Next    ; Assigns "Media_Next" to "Alt"+".".
 !,::Media_Prev    ; Assigns "Media_Prev" to "Alt"+",".
-!/::Media_Play_Pause    ; Assigns "Media_Play_Pause" to "Alt"+"/".
+!/::    ; Assigns "Media_Play_Pause" to "Alt"+"/".
+    IfWinActive, ahk_exe explorer.exe
+    {
+        Run MediaPlayPause.ahk
+    }
+    else
+    {
+        Send {Media_Play_Pause}
+    }
+    return
 !=::Volume_Up    ; Assigns "Volume_Up" to "Alt"+"=".
 !-::Volume_Down    ; Assigns "Volume_Down" to "Alt"+"-".
 !0::Volume_Mute    ; Assigns "Volume_Mute" to "Alt"+"0".
@@ -199,6 +208,8 @@ Function 9 - When a Windows Explorer window is active, and "Autohotkey" is the t
 
 
 keymap version history:
+9.5 - Updated Function 9 to workaround a problem with the Media_Play_Pause command and Explorer.
+    - Added MediaPlayPause.ahk for the new workaround in Function 9.
 9.4 - Reorganised file struction. Created new, optimised "A icon.psd"
 9.3 - Added known issues.
     - Added TO DO.
