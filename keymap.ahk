@@ -192,7 +192,20 @@ AppsKey & Ctrl::
 
 /*
 ************************************************************************************************
+keymap known issues:
+Function 9 - When a Windows Explorer window is active, and "Autohotkey" is the title of that
+             window, the Media_Play_Pause command doesn't work. Seems to be a bug in AHK, not
+			 this script.
+			 
+
+TO DO:
+ - Reorganise file structure.
+ - Compress "AHK icons.psd".
+
+
 keymap version history:
+9.3 - Added known issues.
+    - Added TO DO.
 9.2 - Updated Function 8 to resolve a conflict with Firefox's built-in autocomplete.
     - Removed Windows Vista as a supported platform. It probably works, but is no longer used.
 9.1 - Updated Function 1.

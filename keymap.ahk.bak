@@ -194,8 +194,7 @@ AppsKey & Ctrl::
 ************************************************************************************************
 keymap version history:
 9.2 - Updated Function 8 to resolve a conflict with Firefox's built-in autocomplete.
-    - Removed Windows Vista as a supported platform. It probably works, but isn't worth
-	  supporting.
+    - Removed Windows Vista as a supported platform. It probably works, but is no longer used.
 9.1 - Updated Function 1.
 9.0 - Added media key shortcuts.
 ************************************************************************************************
