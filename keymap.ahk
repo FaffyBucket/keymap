@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             9.6 (version history at the bottom of this script)                      *
+* Version:             9.7 (version history at the bottom of this script)                      *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            7, 8                                                                    *
@@ -182,9 +182,10 @@ AppsKey & Ctrl::
 
 !.::Media_Next    ; Assigns "Media_Next" to "Alt"+".".
 !,::Media_Prev    ; Assigns "Media_Prev" to "Alt"+",".
-!/::    ; Assigns "Media_Play_Pause" to "Alt"+"/".
+!/::    		  ; Assigns "Media_Play_Pause" to "Alt"+"/".
     IfWinActive, ahk_exe explorer.exe
     {
+        ;Run MediaPlayPause.exe
         Run MediaPlayPause.ahk
     }
     else
@@ -192,9 +193,10 @@ AppsKey & Ctrl::
         Send {Media_Play_Pause}
     }
     return
-!=::Volume_Up    ; Assigns "Volume_Up" to "Alt"+"=".
-!-::Volume_Down    ; Assigns "Volume_Down" to "Alt"+"-".
-!0::Volume_Mute    ; Assigns "Volume_Mute" to "Alt"+"0".
+
+!=::Volume_Up     ; Assigns "Volume_Up" to "Alt"+"=".
+!-::Volume_Down   ; Assigns "Volume_Down" to "Alt"+"-".
+!0::Volume_Mute   ; Assigns "Volume_Mute" to "Alt"+"0".
 
 
 
@@ -208,6 +210,10 @@ Function 9 - When a Windows Explorer window is active, and an icon is selected, 
 
 
 keymap Version History:
+9.7 - Imported new versions of AltMediaControl and MediaPlayPause for Function 9.
+	- Removed duplicate image file.
+	- Corrected some file names.
+	- Updated documentation.
 9.6 - Updated documentation.
 9.5 - Updated Function 9 to workaround a problem with the Media_Play_Pause command and Explorer.
     - Added MediaPlayPause.ahk for the new workaround in Function 9.

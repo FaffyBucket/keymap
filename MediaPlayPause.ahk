@@ -2,7 +2,7 @@
 ************************************************************************************************
 * MediaPlayPause                                                                               *
 *                                                                                              *
-* Version:              1.0 (Version History at the bottom of this script)                     *
+* Version:              1.1 (Version History at the bottom of this script)                     *
 * AutoHotkey Version:   1.1                                                                    *
 * Language:             English                                                                *
 * Platform:             Windows 7, 8                                                           *
@@ -22,6 +22,8 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+#NoTrayIcon
+
 
 Send {Tab}
 Send {Media_Play_Pause}
@@ -40,7 +42,9 @@ MediaPlayPause Known Issues:
    and "x" have to be released and pressed again to send the "Media_Play_Pause" command
    repeatedly using this script.
 
+
 MediaPlayPause Version History:
+1.1 - Compiled MediaPlayPause.
 1.0 - Created MediaPlayPause.ahk.
 ************************************************************************************************
 */
