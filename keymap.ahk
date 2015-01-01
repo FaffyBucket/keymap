@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             9.7 (version history at the bottom of this script)                      *
+* Version:             9.8 (version history at the bottom of this script)                      *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            7, 8                                                                    *
@@ -82,22 +82,29 @@ NumLock::
 
 ; 2. Maps Pause Break key to open/close optical disc drive.
 
-;Drive, Label, A:, ADrive
-;Drive, Label, B:, BDrive
+Pause::
+	Drive, Eject
+	if A_TimeSinceThisHotkey < 1000
+		Drive, Eject, Drive, 1
+	return
+	
+/* For multiple optical drives
+*****************************************
+Drive, Label, A:, ADrive
+Drive, Label, B:, BDrive
 
-;Pause::
-;	Drive, Eject, ADrive
-;	if A_TimeSinceThisHotkey < 1000
-;		Drive, Eject, ADrive, 1
-;	Drive, Eject
-;	if A_TimeSinceThisHotkey < 1000
-;		Drive, Eject, Drive, 1
-;	return
-;+Pause::
-;	Drive, Eject, BDrive
-;	if A_TimeSinceThisHotkey < 1000
-;		Drive, Eject, BDrive, 1
-;	return
+Pause::
+	Drive, Eject, ADrive
+	if A_TimeSinceThisHotkey < 1000
+		Drive, Eject, ADrive, 1
+
++Pause::
+	Drive, Eject, BDrive
+	if A_TimeSinceThisHotkey < 1000
+		Drive, Eject, BDrive, 1
+	return
+*****************************************
+*/
 
 
 
@@ -210,6 +217,7 @@ Function 9 - When a Windows Explorer window is active, and an icon is selected, 
 
 
 keymap Version History:
+9.8 - Re-enabled Function 2.
 9.7 - Imported new versions of AltMediaControl and MediaPlayPause for Function 9.
 	- Removed duplicate image file.
 	- Corrected some file names.
