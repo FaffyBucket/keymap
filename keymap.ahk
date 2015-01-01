@@ -5,7 +5,7 @@
 * Version:             9.8 (version history at the bottom of this script)                      *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
-* Platform:            7, 8                                                                    *
+* Platform:            Windows 7, 8                                                            *
 * Author:              www.twitter.com/matthiew                                                *
 *                                                                                              *
 * Script Function:                                                                             *
