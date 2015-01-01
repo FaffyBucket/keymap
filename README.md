@@ -30,3 +30,33 @@
 *    Assigns "Volume_Mute" to "Alt"+"0".                                                       *
 ************************************************************************************************
 */
+
+
+
+
+/*
+************************************************************************************************
+keymap Known Issues:
+Function 9 - When a Windows Explorer window is active, and an icon is selected, the
+             Media_Play_Pause command doesn't work. Seems to be a bug in AHK, not this script.
+			 Noticed in Windows 8.1 Enterprise x64.
+
+
+keymap Version History:
+9.8 - Re-enabled Function 2.
+9.7 - Imported new versions of AltMediaControl and MediaPlayPause for Function 9.
+	- Removed duplicate image file.
+	- Corrected some file names.
+	- Updated documentation.
+9.6 - Updated documentation.
+9.5 - Updated Function 9 to workaround a problem with the Media_Play_Pause command and Explorer.
+    - Added MediaPlayPause.ahk for the new workaround in Function 9.
+9.4 - Reorganised file struction. Created new, optimised "A icon.psd"
+9.3 - Added known issues.
+    - Added TO DO.
+9.2 - Updated Function 8 to resolve a conflict with Firefox's built-in autocomplete.
+    - Removed Windows Vista as a supported platform. It probably works, but is no longer used.
+9.1 - Updated Function 1.
+9.0 - Added media key shortcuts.
+************************************************************************************************
+*/
