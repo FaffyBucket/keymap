@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             9.8 (version history at the bottom of this script)                      *
+* Version:             9.9 (version history at the bottom of this script)                      *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -36,6 +36,10 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 Menu, Tray, Icon, K.ico
+
+#SingleInstance
+
+
 
 
 AppsKey::AppsKey
@@ -217,6 +221,7 @@ Function 9 - When a Windows Explorer window is active, and an icon is selected, 
 
 
 keymap Version History:
+9.9 - Added #SingleInstance.
 9.8 - Re-enabled Function 2.
 9.7 - Imported new versions of AltMediaControl and MediaPlayPause for Function 9.
 	- Removed duplicate image file.
