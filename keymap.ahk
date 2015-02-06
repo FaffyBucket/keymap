@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             9.9 (version history at the bottom of this script)                      *
+* Version:             9.9.01 (version history at the bottom of this script)                   *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -31,6 +31,11 @@
 ************************************************************************************************
 */
 
+if not A_IsAdmin
+{
+	Run *RunAs "%A_AhkPath%" keymap.ahk
+	ExitApp
+}
 
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
@@ -73,7 +78,7 @@ NumLock::
 			}
 		}
 	else
-		#MaxHotkeysPerInterval 2000
+		#MaxHotkeysPerInterval 3000
 		IfWinActive, ahk_exe vmconnect.exe
 			{
 ;			Do nothing while Hyper-V Virtual Machine Connection is active because
@@ -221,6 +226,8 @@ Function 9 - When a Windows Explorer window is active, and an icon is selected, 
 
 
 keymap Version History:
+9.9.01 - Run with elevated permissions.
+	   - Function 1: Increased #MaxHotkeysPerInterval to 3000.
 9.9 - Added #SingleInstance.
 9.8 - Re-enabled Function 2.
 9.7 - Imported new versions of AltMediaControl and MediaPlayPause for Function 9.
