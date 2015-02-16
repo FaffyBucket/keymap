@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             9.9.01 (version history at the bottom of this script)                   *
+* Version:             9.9.02 (version history at the bottom of this script)                   *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -43,6 +43,7 @@ Function 9 - When a Windows Explorer window is active, and an icon is selected, 
 
 
 keymap Version History:
+9.9.02 - Adjusted Function 1 to improve compatibility with vmconnect.
 9.9.01 - Run with elevated permissions.
 	   - Function 1: Increased #MaxHotkeysPerInterval to 3000.
 9.9 - Added #SingleInstance.
