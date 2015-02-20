@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             9.9.02 (version history at the bottom of this script)                   *
+* Version:             9.9.03 (version history at the bottom of this script)                   *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -94,7 +94,7 @@ NumLock::
 Pause::
 	Drive, Eject
 	if A_TimeSinceThisHotkey < 1000
-		Drive, Eject, Drive, 1
+		Drive, Eject, , 1
 	return
 	
 /* For multiple optical drives
@@ -220,12 +220,12 @@ AppsKey & Ctrl::
 /*
 ************************************************************************************************
 keymap Known Issues:
-Function 9 - When a Windows Explorer window is active, and an icon is selected, the
-             Media_Play_Pause command doesn't work. Seems to be a bug in AHK, not this script.
-			 Noticed in Windows 8.1 Enterprise x64.
+
 
 
 keymap Version History:
+9.9.03 - Updated Function 2 to increase compatibility with any optical drive.
+	   - Updated MediaPlayPause.ahk.
 9.9.02 - Adjusted Function 1 to improve compatibility with vmconnect.
 9.9.01 - Run with elevated permissions.
 	   - Function 1: Increased #MaxHotkeysPerInterval to 3000.

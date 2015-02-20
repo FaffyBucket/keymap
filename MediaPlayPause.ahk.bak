@@ -9,13 +9,11 @@
 * Author:               www.twitter.com/matthiew                                               *
 *                                                                                              *
 * Script Function:                                                                             *
-* This script is designed to replace the functionality of Media_Play_Pause in Windows when     *
-* Explorer is active and a file is selected. When a file is selected in Explorer, Windows will *
-* try to play the file instead of sending the Play/Pause command, and it often fails. This     *
-* script will then change the selection in the Explorer window, and then send the              *
-* Media_Play_Pause command successfully.                                                       *
-* So instead of code such as "Send {Media_Play_Pause}", or "x::Media_Play_Pause", this  script *
-* can be run.                                                                                  *
+* This script is designed to be a workaround for a bug in AutoHotkey. The bug is that when the *
+* Media_Play_Pause command is sent while any icon is selected in Windows Explorer, the command *
+* fails. So instead of code such as "Send {Media_Play_Pause}", or "x::Media_Play_Pause", this  *
+* script can be run. This script will then change the selection in the Explorer window, and    *
+* then send the Media_Play_Pause command successfully.                                         *
 ************************************************************************************************
 */
 
