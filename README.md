@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             9.9.03 (version history at the bottom of this script)                   *
+* Version:             9.9.04 (version history at the bottom of this script)                   *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -41,6 +41,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+9.9.04 - Updated Function 1 to improve compatibility with vmconnect.
 9.9.03 - Updated Function 2 to increase compatibility with any optical drive.
 	   - Updated MediaPlayPause.ahk.
 9.9.02 - Adjusted Function 1 to improve compatibility with vmconnect.

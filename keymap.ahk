@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             9.9.03 (version history at the bottom of this script)                   *
+* Version:             9.9.04 (version history at the bottom of this script)                   *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -56,34 +56,29 @@ AppsKey::AppsKey
 
 SetNumLockState, AlwaysOn
 NumLock::
-	IfWinNotExist, ahk_exe vmconnect.exe
+	IfWinExist, ahk_exe vmconnect.exe
+	{
+		Run, Reload.ahk
+		ExitApp
+	}
+	#MaxHotkeysPerInterval 70
+	SetNumLockState, AlwaysOn
+	IfWinExist, Calculator
 		{
-		#MaxHotkeysPerInterval 70
-		SetNumLockState, AlwaysOn
-		IfWinExist, Calculator
+		IfWinActive, Calculator
 			{
-			IfWinActive, Calculator
-				{
-				WinClose, Calculator
-				}
-			else
-				{
-				WinActivate, Calculator
-				}
+			WinClose, Calculator
 			}
 		else
 			{
-			Run calc
 			WinActivate, Calculator
 			}
 		}
 	else
-		#MaxHotkeysPerInterval 3000
-		IfWinActive, ahk_exe vmconnect.exe
-			{
-;			Do nothing while Hyper-V Virtual Machine Connection is active because
-;			it will send hundreds of Num Lock key presses.
-			}
+		{
+		Run calc
+		WinActivate, Calculator
+		}		
 	return
 
 
@@ -224,6 +219,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+9.9.04 - Updated Function 1 to improve compatibility with vmconnect.
 9.9.03 - Updated Function 2 to increase compatibility with any optical drive.
 	   - Updated MediaPlayPause.ahk.
 9.9.02 - Adjusted Function 1 to improve compatibility with vmconnect.
