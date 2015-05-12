@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             9.9.04 (version history at the bottom of this script)                   *
+* Version:             9.9.05 (version history at the bottom of this script)                   *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -31,18 +31,19 @@
 ************************************************************************************************
 */
 
-if not A_IsAdmin
-{
-	Run *RunAs "%A_AhkPath%" keymap.ahk
-	ExitApp
-}
+/* if not A_IsAdmin
+ * {
+ * 	Run *RunAs "%A_AhkPath%" keymap.ahk
+ * 	ExitApp
+ * }
+ */
 
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 Menu, Tray, Icon, K.ico
 
-#SingleInstance
+#SingleInstance Force
 
 
 
@@ -219,6 +220,9 @@ keymap Known Issues:
 
 
 keymap Version History:
+9.9.05 - Removed run as Administrator. I'm not sure why I put that in, and it should be set in
+		 the launcher.
+	   - Updated Singleinstance. Added Force.
 9.9.04 - Updated Function 1 to improve compatibility with vmconnect.
 9.9.03 - Updated Function 2 to increase compatibility with any optical drive.
 	   - Updated MediaPlayPause.ahk.
