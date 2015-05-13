@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             9.9.06 (version history at the bottom of this script)                   *
+* Version:             9.9.07 (version history at the bottom of this script)                   *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -31,13 +31,12 @@
 ************************************************************************************************
 */
 
-; Set this in the shortcut instead to avoid UAC prompts.
-/* if not A_IsAdmin
- * {
- * 	Run *RunAs "%A_AhkPath%" keymap.ahk
- * 	ExitApp
- * }
- */
+if not A_IsAdmin
+{
+	Run *RunAs "%A_AhkPath%" keymap.ahk
+	ExitApp
+}
+
 
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
@@ -221,6 +220,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+9.9.07 - Returned run as Administrator section. Those changes in 9.9.05 don't work.
 9.9.06 - Updated documentation.
 9.9.05 - Removed run as Administrator. I'm not sure why I put that in, and it should be set in
 		 the shortcut to avoid UAC prompts.
