@@ -28,6 +28,7 @@
 *    Assigns "Volume_Up" to "Alt"+"=".                                                         *
 *    Assigns "Volume_Down" to "Alt"+"-".                                                       *
 *    Assigns "Volume_Mute" to "Alt"+"0".                                                       *
+* 10. Text expansion.                                                                          *
 ************************************************************************************************
 */
 
@@ -213,6 +214,15 @@ AppsKey & Ctrl::
 
 
 
+; 10. Text expansion
+
+::Admin::Administrator
+::admin::administrator
+::gfx::graphics card
+
+
+
+
 /*
 ************************************************************************************************
 keymap Known Issues:
@@ -220,6 +230,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+10 - Added Function 10.
 9.9.07 - Returned run as Administrator section. Those changes in 9.9.05 don't work.
 9.9.06 - Updated documentation.
 9.9.05 - Removed run as Administrator. I'm not sure why I put that in, and it should be set in
