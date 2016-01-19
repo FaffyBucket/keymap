@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             9.9.07 (version history at the bottom of this script)                   *
+* Version:             10.2 (version history at the bottom of this script)                     *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -220,6 +220,14 @@ AppsKey & Ctrl::
 ::btw::by the way
 ::gfx::graphics card
 ::hdd::hard drive
+:*:zzz::
+(
+Helpdesk job:    Organisers: 
+Technician: matthiew
+
+Request details:
+
+)
 
 
 
@@ -231,6 +239,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+10.2 - Updated Function 10.
 10.1 - Added to Function 10.
 10.0 - Added Function 10.
 9.9.07 - Returned run as Administrator section. Those changes in 9.9.05 don't work.
