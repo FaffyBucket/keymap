@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             10.4 (version history at the bottom of this script)                     *
+* Version:             10.5 (version history at the bottom of this script)                     *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -220,6 +220,8 @@ AppsKey & Ctrl::
 ::btw::by the way
 ::gfx::graphics card
 ::hdd::hard drive
+::mins::minutes
+::secs::seconds
 :C1:sp3::Surface Pro 3
 :*:zzz::
 (
@@ -240,6 +242,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+10.5 - Added to Function 10.
 10.4 - Added to Function 10.
 10.3 - Added to Function 10.
 10.2 - Updated Function 10.
