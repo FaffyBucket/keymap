@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             10.5 (version history at the bottom of this script)                     *
+* Version:             10.6 (version history at the bottom of this script)                     *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -217,12 +217,16 @@ AppsKey & Ctrl::
 ; 10. Text expansion
 
 ::admin::administrator
+::atm::at the moment
 ::btw::by the way
+::fmp::FollowMePrint
 ::gfx::graphics card
 ::hdd::hard drive
 ::mins::minutes
+::rn::right now
 ::secs::seconds
 :C1:sp3::Surface Pro 3
+:*:xxx::Password reset.
 :*:zzz::
 (
 Helpdesk job:    Organisers: 
@@ -242,6 +246,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+10.6 - Added to Function 10.
 10.5 - Added to Function 10.
 10.4 - Added to Function 10.
 10.3 - Added to Function 10.
