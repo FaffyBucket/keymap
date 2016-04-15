@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             10.6 (version history at the bottom of this script)                     *
+* Version:             11.0 (version history at the bottom of this script)                     *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -29,6 +29,7 @@
 *    Assigns "Volume_Down" to "Alt"+"-".                                                       *
 *    Assigns "Volume_Mute" to "Alt"+"0".                                                       *
 * 10. Text expansion.                                                                          *
+* 11. "Ctrl"+"Alt"+"F1" runs Windowed Game Control											   *
 ************************************************************************************************
 */
 
@@ -239,6 +240,14 @@ Request details:
 
 
 
+; 11. Windowed Game Control
+
+^!F1::
+Run "B:\Install Files\AutoHotkey\Windowed-Game-Control\Windowed Game Control.ahk"
+
+
+
+
 /*
 ************************************************************************************************
 keymap Known Issues:
@@ -246,6 +255,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.0 - Added Funciton 11.
 10.6 - Added to Function 10.
 10.5 - Added to Function 10.
 10.4 - Added to Function 10.
