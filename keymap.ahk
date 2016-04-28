@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.1 (version history at the bottom of this script)                     *
+* Version:             11.2 (version history at the bottom of this script)                     *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -228,7 +228,7 @@ AppsKey & Ctrl::
 ::rn::right now
 ::secs::seconds
 :C1:sp3::Surface Pro 3
-:*:xxx::Password reset.
+:*:rrr::Password reset.
 :*:zzz::
 (
 Helpdesk job:    Organisers: 
@@ -256,6 +256,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.2 - Updated Function 10.
 11.1 - Added to Function 10.
 11.0 - Added Funciton 11.
 10.6 - Added to Function 10.
