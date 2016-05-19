@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.2 (version history at the bottom of this script)                     *
+* Version:             11.3 (version history at the bottom of this script)                     *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -217,9 +217,9 @@ AppsKey & Ctrl::
 
 ; 10. Text expansion
 
-:*:aaa::AV set up complete.
 ::admin::administrator
 ::atm::at the moment
+:*:ava::AV set up complete.
 ::btw::by the way
 ::fmp::FollowMePrint
 ::gfx::graphics card
@@ -256,6 +256,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.3 - Updated Function 10.
 11.2 - Updated Function 10.
 11.1 - Added to Function 10.
 11.0 - Added Funciton 11.
