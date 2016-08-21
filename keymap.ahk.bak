@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.4 (version history at the bottom of this script)                     *
+* Version:             11.6 (version history at the bottom of this script)                     *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -67,21 +67,28 @@ NumLock::
 	#MaxHotkeysPerInterval 70
 	SetNumLockState, AlwaysOn
 	IfWinExist, Calculator
-		{
+	{
 		IfWinActive, Calculator
-			{
-			WinClose, Calculator
-			}
-		else
-			{
-			WinActivate, Calculator
-			}
-		}
-	else
 		{
-		Run calc
+			WinClose, Calculator
+		}
+		else
+		{
+			WinActivate, Calculator
+		}
+	}
+	else
+	{
+		Run calc1
+		IfWinExist, Calculator
+		{
+		}
+		else
+		{
+			;Run calc
+		}
 		WinActivate, Calculator
-		}		
+	}		
 	return
 
 
@@ -217,7 +224,7 @@ AppsKey & Ctrl::
 
 ; 10. Text expansion
 
-::admin::administrator
+::admini::administrator
 ::atm::at the moment
 :*:avv::AV set up complete.
 ::btw::by the way
@@ -256,6 +263,9 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.6 - Updated Function 1 to run calc1.
+	 - Updated Function 10.
+11.5 - Re-enabled Function 3.
 11.4 - Updated Function 10.
 11.3 - Updated Function 10.
 11.2 - Updated Function 10.
