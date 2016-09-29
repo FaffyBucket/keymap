@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.6 (version history at the bottom of this script)                     *
+* Version:             11.7 (version history at the bottom of this script)                     *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -12,7 +12,7 @@
 * 1. Maps "Num Lock" key to open/activate/close calc.exe.                                      *
 * 2. Maps "Pause Break" key to open/close optical disc drive.                                  *
 * 3. Maps "Scroll Lock" key to switch playback device between first and second device in the   *
-*    list (for Windows 7).                                                                     *
+*    list (for Windows 7+).                                                                     *
 * 4. Maps "Win"+"Shift"+"Left" shortcut to "Alt"+"`" so that moving a window to the next       *
 *    monitor can be done with just the left hand.                                              *
 * 5. Maps "Win"+"`" to maximise/restore the current window with just the left hand.            *
@@ -117,7 +117,7 @@ Pause::
 
 
 ; 3. Maps Scroll lock key to switch playback device between first and second device in the list
-;    (for Windows 7).
+;    (for Windows 7+).
 
 ScrollLock::
 	Run, mmsys.cpl
@@ -130,6 +130,7 @@ ScrollLock::
 		ControlSend,SysListView321,{Down 2}
 	}
 	ControlClick,&Set Default
+	Sleep, 500
 	ControlClick,OK
 	return
 
@@ -256,6 +257,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.7 - Added 500ms pause to Function 3 so the change is clearly visible.
 11.6 - Updated Function 1 to run calc1.
 	 - Updated Function 10.
 11.5 - Re-enabled Function 3.
