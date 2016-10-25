@@ -218,7 +218,7 @@ AppsKey & Ctrl::
 
 ; 10. Text expansion
 
-;::admini::administrator
+::admini::administrator
 ::atm::at the moment
 :*:avv::AV set up complete.
 ::btw::by the way
@@ -226,6 +226,7 @@ AppsKey & Ctrl::
 ::gfx::graphics card
 ::hdd::hard drive
 ::mins::minutes
+:C:pc::computer
 ::rn::right now
 ::secs::seconds
 :C1:sp3::Surface Pro 3

@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.7 (version history at the bottom of this script)                     *
+* Version:             11.8 (version history at the bottom of this script)                     *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -226,6 +226,7 @@ AppsKey & Ctrl::
 ::gfx::graphics card
 ::hdd::hard drive
 ::mins::minutes
+:C:pc::computer
 ::rn::right now
 ::secs::seconds
 :C1:sp3::Surface Pro 3
@@ -257,6 +258,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.8 - Updated Function 10.
 11.7 - Added 500ms pause to Function 3 so the change is clearly visible.
 11.6 - Updated Function 1 to run calc1.
 	 - Updated Function 10.
