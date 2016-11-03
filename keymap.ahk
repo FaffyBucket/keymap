@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.8 (version history at the bottom of this script)                     *
+* Version:             11.9 (version history at the bottom of this script)                     *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -79,7 +79,7 @@ NumLock::
 	}
 	else
 	{
-		Run calc1
+		Run calc
 		WinActivate, Calculator
 	}		
 	return
@@ -258,6 +258,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.9 - Updated Function 1 to run calc again.
 11.8 - Updated Function 10.
 11.7 - Added 500ms pause to Function 3 so the change is clearly visible.
 11.6 - Updated Function 1 to run calc1.
