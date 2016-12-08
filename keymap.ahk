@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.11 (version history at the bottom of this script)                    *
+* Version:             11.12 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 7, 8                                                            *
@@ -227,13 +227,13 @@ AppsKey & Ctrl::
 ::hdd::hard drive
 ::mins::minutes
 :C:pc::computer
-::rcc::Rollover complete.
+:*:rcc::Rollover complete.
 ::rn::right now
 ::sb::Surface Book
 ::secs::seconds
 :C1:sp3::Surface Pro 3
 :*:rrr::Password reset.
-::uuu::Upgrade complete.
+:*:uuu::Upgrade complete.
 :*:zzz::
 (
 Helpdesk job:    Organisers: 
@@ -261,6 +261,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.12 - F10: Updated "Rollover complete." and "Upgrade complete." text expansion.
 11.11 - F10: Added "rcc" and "uuu" text expansion.
 11.10 - Updated Function 10.
 11.9 - Updated Function 1 to run calc again.
