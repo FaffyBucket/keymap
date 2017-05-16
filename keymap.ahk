@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.13 (version history at the bottom of this script)                    *
+* Version:             11.14 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -232,6 +232,7 @@ AppsKey & Ctrl::
 ::sb::Surface Book
 ::secs::seconds
 :C1:sp3::Surface Pro 3
+:C1:sp4::Surface Pro 4
 :*:zhh::
 (
 Helpdesk job:    Organisers: 
@@ -261,6 +262,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.14 - F10: Added "sp4"
 11.13 - F10: Changed "rrr" shortcut to "zrr"; Changed "zzz" shortcut to "zhh".
 11.12 - F10: Updated "Rollover complete." and "Upgrade complete." text expansion.
 11.11 - F10: Added "rcc" and "uuu" text expansion.
