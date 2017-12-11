@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.14 (version history at the bottom of this script)                    *
+* Version:             11.15 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -55,7 +55,7 @@ AppsKey::AppsKey
 
 
 
-; 1. Maps Num Lock key to open/activate/close calc.exe
+; 1. Maps Num Lock key to open/activate/close Calculator.exe
 
 SetNumLockState, AlwaysOn
 NumLock::
@@ -79,7 +79,7 @@ NumLock::
 	}
 	else
 	{
-		Run calc
+		Run calculator://
 		WinActivate, Calculator
 	}		
 	return
@@ -262,6 +262,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.15 - F1: Updated to launch Calculator.exe (Win 10) instead of calc.exe (legacy).
 11.14 - F10: Added "sp4"
 11.13 - F10: Changed "rrr" shortcut to "zrr"; Changed "zzz" shortcut to "zhh".
 11.12 - F10: Updated "Rollover complete." and "Upgrade complete." text expansion.
