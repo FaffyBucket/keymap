@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.15 (version history at the bottom of this script)                    *
+* Version:             11.16 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -229,7 +229,7 @@ AppsKey & Ctrl::
 :C:pc::computer
 :*:rcc::Rollover complete.
 ::rn::right now
-::sb::Surface Book
+::sbb::Surface Book
 ::secs::seconds
 :C1:sp3::Surface Pro 3
 :C1:sp4::Surface Pro 4
@@ -262,6 +262,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.16 - F10: Changed "sb" to "sbb".
 11.15 - F1: Updated to launch Calculator.exe (Win 10) instead of calc.exe (legacy).
 11.14 - F10: Added "sp4"
 11.13 - F10: Changed "rrr" shortcut to "zrr"; Changed "zzz" shortcut to "zhh".
