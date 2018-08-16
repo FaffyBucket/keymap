@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.16 (version history at the bottom of this script)                    *
+* Version:             11.17 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -221,7 +221,7 @@ AppsKey & Ctrl::
 ::admini::administrator
 ::atm::at the moment
 :*:avv::AV set up complete.
-::btw::by the way
+::btww::by the way
 ::fmp::FollowMePrint
 ::gfx::graphics card
 ::hdd::hard drive
@@ -229,7 +229,7 @@ AppsKey & Ctrl::
 :C:pc::computer
 :*:rcc::Rollover complete.
 ::rn::right now
-::sbb::Surface Book
+:*:sbb::Surface Book
 ::secs::seconds
 :C1:sp3::Surface Pro 3
 :C1:sp4::Surface Pro 4
@@ -262,6 +262,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.17 - F10: Updated "sbb".
 11.16 - F10: Changed "sb" to "sbb".
 11.15 - F1: Updated to launch Calculator.exe (Win 10) instead of calc.exe (legacy).
 11.14 - F10: Added "sp4"
