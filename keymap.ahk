@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.18 (version history at the bottom of this script)                    *
+* Version:             11.19 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -226,7 +226,7 @@ AppsKey & Ctrl::
 ::gfx::graphics card
 ::hdd::hard drive
 ::mins::minutes
-:C:pc::computer
+::pcc::computer
 :*:rcc::Rollover complete.
 ::rn::right now
 :*:sbb::Surface Book
@@ -262,6 +262,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.19 - F10: Updated "pc" for compatibility with Firefox.
 11.18 - F10: Changed "btw" to "btww".
 11.17 - F10: Updated "sbb".
 11.16 - F10: Changed "sb" to "sbb".
