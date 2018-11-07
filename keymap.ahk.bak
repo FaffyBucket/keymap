@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.19 (version history at the bottom of this script)                    *
+* Version:             11.20 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -224,7 +224,7 @@ AppsKey & Ctrl::
 ::btww::by the way
 ::fmp::FollowMePrint
 ::gfx::graphics card
-::hdd::hard drive
+::hddd::hard drive
 ::mins::minutes
 ::pcc::computer
 :*:rcc::Rollover complete.
@@ -262,6 +262,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.20 - F10: Changed "hdd" to "hddd".
 11.19 - F10: Updated "pc" for compatibility with Firefox.
 11.18 - F10: Changed "btw" to "btww".
 11.17 - F10: Updated "sbb".
