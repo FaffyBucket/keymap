@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.20 (version history at the bottom of this script)                    *
+* Version:             11.21 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -230,6 +230,7 @@ AppsKey & Ctrl::
 :*:rcc::Rollover complete.
 ::rn::right now
 :*:sbb::Surface Book
+:*:sll::Surface Laptop
 ::secs::seconds
 :C1:sp3::Surface Pro 3
 :C1:sp4::Surface Pro 4
@@ -262,13 +263,14 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.21 - F10: Added "sll".
 11.20 - F10: Changed "hdd" to "hddd".
 11.19 - F10: Updated "pc" for compatibility with Firefox.
 11.18 - F10: Changed "btw" to "btww".
 11.17 - F10: Updated "sbb".
 11.16 - F10: Changed "sb" to "sbb".
 11.15 - F1: Updated to launch Calculator.exe (Win 10) instead of calc.exe (legacy).
-11.14 - F10: Added "sp4"
+11.14 - F10: Added "sp4".
 11.13 - F10: Changed "rrr" shortcut to "zrr"; Changed "zzz" shortcut to "zhh".
 11.12 - F10: Updated "Rollover complete." and "Upgrade complete." text expansion.
 11.11 - F10: Added "rcc" and "uuu" text expansion.
