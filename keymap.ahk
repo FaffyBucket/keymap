@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.22 (version history at the bottom of this script)                    *
+* Version:             11.23 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -235,6 +235,7 @@ AppsKey & Ctrl::
 ::secs::seconds
 :C1:sp3::Surface Pro 3
 :C1:sp4::Surface Pro 4
+:C1:sp5::Surface Pro 5
 :*:zhh::
 (
 Helpdesk job:    Organisers: 
@@ -264,6 +265,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.23 - F10: Added "sp5".
 11.22 - F10: Added "sb2".
 11.21 - F10: Added "sll".
 11.20 - F10: Changed "hdd" to "hddd".

@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.21 (version history at the bottom of this script)                    *
+* Version:             11.22 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -230,6 +230,7 @@ AppsKey & Ctrl::
 :*:rcc::Rollover complete.
 ::rn::right now
 :*:sbb::Surface Book
+:*:sb2::Surface Book 2
 :*:sll::Surface Laptop
 ::secs::seconds
 :C1:sp3::Surface Pro 3
@@ -263,6 +264,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.22 - F10: Added "sb2".
 11.21 - F10: Added "sll".
 11.20 - F10: Changed "hdd" to "hddd".
 11.19 - F10: Updated "pc" for compatibility with Firefox.
