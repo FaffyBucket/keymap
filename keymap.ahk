@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.23 (version history at the bottom of this script)                    *
+* Version:             11.24 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -244,6 +244,18 @@ Technician: matthiew
 Request details:
 
 )
+:*:zjj::
+(
+
+
+Your account has not been hacked. They are trying to trick you. Please report the messages by doing the following:
+Right-click on the message.
+Select Junk.
+Select Report as Phishing.
+Kind regards,
+
+matthiew
+)
 :*:zrr::Password reset.
 :*:zuu::Upgrade complete.
 
@@ -265,6 +277,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.24 - F10: Added "zjj"
 11.23 - F10: Added "sp5".
 11.22 - F10: Added "sb2".
 11.21 - F10: Added "sll".
