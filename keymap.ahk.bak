@@ -79,7 +79,8 @@ NumLock::
 	}
 	else
 	{
-		Run calculator://
+;		Run calculator://
+		Run calc
 		WinActivate, Calculator
 	}		
 	return
@@ -247,12 +248,11 @@ Request details:
 :*:zjj::
 (
 
+
 Your account has not been hacked. They are trying to trick you. Please report the messages by doing the following:
-
-1. Right-click on the message.
-2. Select Junk.
-3. Select Report as Phishing.
-
+Right-click on the message.
+Select Junk.
+Select Report as Phishing.
 Kind regards,
 
 matthiew
