@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.24 (version history at the bottom of this script)                    *
+* Version:             11.25 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -278,6 +278,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.25 - F1: Updated to run calc again.
 11.24 - F10: Added "zjj"
 11.23 - F10: Added "sp5".
 11.22 - F10: Added "sb2".
