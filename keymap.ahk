@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.26 (version history at the bottom of this script)                    *
+* Version:             11.27 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -227,6 +227,7 @@ AppsKey & Ctrl::
 ::gfx::graphics card
 ::hddd::hard drive
 ::mins::minutes
+::mss::Microsoft
 ::pcc::computer
 :*:rcc::Rollover complete.
 ::rn::right now
@@ -278,6 +279,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.27 - F10: Added "mss".
 11.26 - F11: Updated shortcut to Windowed Game Control.
 11.25 - F1: Updated to run calc again.
 11.24 - F10: Added "zjj"

@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.25 (version history at the bottom of this script)                    *
+* Version:             11.26 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -266,7 +266,7 @@ matthiew
 ; 11. Windowed Game Control
 
 ^!F1::
-Run "B:\Install Files\AutoHotkey\Windowed-Game-Control\Windowed Game Control.ahk"
+Run "D:\Install Files\AutoHotkey\Windowed-Game-Control\Windowed Game Control.ahk"
 
 
 
@@ -278,6 +278,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.26 - F11: Updated shortcut to Windowed Game Control.
 11.25 - F1: Updated to run calc again.
 11.24 - F10: Added "zjj"
 11.23 - F10: Added "sp5".
