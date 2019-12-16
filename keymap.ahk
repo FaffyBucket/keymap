@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.28 (version history at the bottom of this script)                    *
+* Version:             11.29 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -239,6 +239,7 @@ AppsKey & Ctrl::
 :C1:sp3::Surface Pro 3
 :C1:sp4::Surface Pro 4
 :C1:sp5::Surface Pro 5
+:C1:sp6::Surface Pro 6
 :*:zhh::
 (
 Helpdesk job:    Organisers: 
@@ -280,7 +281,8 @@ keymap Known Issues:
 
 
 keymap Version History:
-11.28 - F10. Added "sl2".
+11.29 - F10: Added "sp6".
+11.28 - F10: Added "sl2".
 11.27 - F10: Added "mss".
 11.26 - F11: Updated shortcut to Windowed Game Control.
 11.25 - F1: Updated to run calc again.
