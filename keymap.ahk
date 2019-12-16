@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.27 (version history at the bottom of this script)                    *
+* Version:             11.28 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -234,6 +234,7 @@ AppsKey & Ctrl::
 :*:sbb::Surface Book
 :*:sb2::Surface Book 2
 :*:sll::Surface Laptop
+:*:sl2::Surface Laptop 2
 ::secs::seconds
 :C1:sp3::Surface Pro 3
 :C1:sp4::Surface Pro 4
@@ -279,6 +280,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.28 - F10. Added "sl2".
 11.27 - F10: Added "mss".
 11.26 - F11: Updated shortcut to Windowed Game Control.
 11.25 - F1: Updated to run calc again.
