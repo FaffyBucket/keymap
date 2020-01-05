@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.29 (version history at the bottom of this script)                    *
+* Version:             11.30 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -123,12 +123,11 @@ Pause::
 ScrollLock::
 	Run, mmsys.cpl
 	WinWaitActive,Sound
-	ControlSend,SysListView321,{Down}
+	ControlSend,SysListView321,{Down 2}
 	ControlGet, isEnabled, Enabled,,&Set Default
 	if(!isEnabled)
 	{
-		ControlSend,SysListView321,{Down}
-		ControlSend,SysListView321,{Down 2}
+		ControlSend,SysListView321,{Down 3}
 	}
 	ControlClick,&Set Default
 	Sleep, 500
@@ -281,6 +280,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+11.30 - F3: Modified which sound devices to switch bewteen.
 11.29 - F10: Added "sp6".
 11.28 - F10: Added "sl2".
 11.27 - F10: Added "mss".
