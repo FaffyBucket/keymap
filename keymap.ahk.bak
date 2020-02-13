@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             11.30 (version history at the bottom of this script)                    *
+* Version:             12.00 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -46,6 +46,11 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 Menu, Tray, Icon, K.ico
 
 #SingleInstance Force
+
+
+
+
+toggle = 0
 
 
 
@@ -117,7 +122,26 @@ Pause::
 
 
 
-; 3. Maps Scroll lock key to switch playback device between first and second device in the list
+; 3. Maps Scroll lock key to switch playback device using PowerShell and AudioDeviceCmdlets.dll.
+
+ScrollLock::
+	if (toggle = 0)
+	{
+		Run, Powershell Set-AudioDevice -Index 1
+		toggle = 1
+	}
+	else if (toggle = 1)
+	{
+		Run, Powershell Set-AudioDevice -Index 2
+		toggle = 0
+	}
+	return
+
+
+
+/* Legacy Function 3
+***********************************************************************************************
+; 3. Maps Scroll lock key to switch playback device between second and third device in the list
 ;    (for Windows 7+).
 
 ScrollLock::
@@ -133,6 +157,8 @@ ScrollLock::
 	Sleep, 500
 	ControlClick,OK
 	return
+***********************************************************************************************
+*/
 
 
 
@@ -280,6 +306,8 @@ keymap Known Issues:
 
 
 keymap Version History:
+12.00 - 
+11.30 - F3: Modified which sound devices to switch bewteen.
 11.29 - F10: Added "sp6".
 11.28 - F10: Added "sl2".
 11.27 - F10: Added "mss".
