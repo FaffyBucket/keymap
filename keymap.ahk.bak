@@ -136,9 +136,6 @@ ScrollLock::
 		toggle = 0
 	}
 	return
-
-
-
 /* Legacy Function 3
 ***********************************************************************************************
 ; 3. Maps Scroll lock key to switch playback device between second and third device in the list
@@ -306,7 +303,7 @@ keymap Known Issues:
 
 
 keymap Version History:
-12.00 - 
+12.00 - F3: Recreated Function 3 using PowerShell and AudioDeviceCmdlets.dll.
 11.30 - F3: Modified which sound devices to switch bewteen.
 11.29 - F10: Added "sp6".
 11.28 - F10: Added "sl2".
