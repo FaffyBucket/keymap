@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             12.00 (version history at the bottom of this script)                    *
+* Version:             12.01 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -243,7 +243,7 @@ AppsKey & Ctrl::
 
 ::admini::administrator
 ::atm::at the moment
-:*:avv::AV set up complete.
+:*:avv::AV set up complete
 ::btww::by the way
 ::fmp::FollowMePrint
 ::gfx::graphics card
@@ -251,7 +251,7 @@ AppsKey & Ctrl::
 ::mins::minutes
 ::mss::Microsoft
 ::pcc::computer
-:*:rcc::Rollover complete.
+:*:rcc::Rollover complete
 ::rn::right now
 :*:sbb::Surface Book
 :*:sb2::Surface Book 2
@@ -282,8 +282,8 @@ Kind regards,
 
 matthiew
 )
-:*:zrr::Password reset.
-:*:zuu::Upgrade complete.
+:*:zrr::Password reset
+:*:zuu::Upgrade complete
 
 
 
@@ -303,6 +303,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+12.01 - F10: Edited grammar.
 12.00 - F3: Recreated Function 3 using PowerShell and AudioDeviceCmdlets.dll.
 11.30 - F3: Modified which sound devices to switch bewteen.
 11.29 - F10: Added "sp6".

@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             12.01 (version history at the bottom of this script)                    *
+* Version:             12.02 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -255,6 +255,7 @@ AppsKey & Ctrl::
 ::rn::right now
 :*:sbb::Surface Book
 :*:sb2::Surface Book 2
+:*:seqta::SEQTA
 :*:sll::Surface Laptop
 :*:sl2::Surface Laptop 2
 ::secs::seconds
@@ -303,6 +304,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+12.02 - F10: Added "seqta".
 12.01 - F10: Edited grammar.
 12.00 - F3: Recreated Function 3 using PowerShell and AudioDeviceCmdlets.dll.
 11.30 - F3: Modified which sound devices to switch bewteen.
