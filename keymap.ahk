@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             13.00 (version history at the bottom of this script)                    *
+* Version:             13.01 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -300,7 +300,7 @@ Run "D:\Install Files\AutoHotkey\Windowed-Game-Control\Windowed Game Control.ahk
 
 ; 12. Always On Top
 
-^SPACE::  Winset, Alwaysontop, , A
+^`::  Winset, Alwaysontop, , A
 
 
 
@@ -312,7 +312,8 @@ keymap Known Issues:
 
 
 keymap Version History:
-13.00  Maps "Ctrl"+"`" to set/unset the active window as always on top.
+13.01 - F12: Fixed error with mapping.
+13.00 - Maps "Ctrl"+"`" to set/unset the active window as always on top.
 12.02 - F10: Added "seqta".
 12.01 - F10: Edited grammar.
 12.00 - F3: Recreated Function 3 using PowerShell and AudioDeviceCmdlets.dll.
