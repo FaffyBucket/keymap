@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             13.01 (version history at the bottom of this script)                    *
+* Version:             13.02 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -31,6 +31,7 @@
 * 10. Text expansion.                                                                          *
 * 11. "Ctrl"+"Alt"+"F1" runs Windowed Game Control											   *
 * 12. Maps "Ctrl"+"`" to set/unset the active window as always on top.                         *
+* 13. Maps "Alt"+"Ctrl"+"Shift"+"Del" to restart Explorer.                                     *
 ************************************************************************************************
 */
 
@@ -305,6 +306,15 @@ Run "D:\Install Files\AutoHotkey\Windowed-Game-Control\Windowed Game Control.ahk
 
 
 
+; 13. Restart Explorer
+
+^!+Del::
+Process, Close, explorer.exe
+;Run, notepad.exe
+
+
+
+
 /*
 ************************************************************************************************
 keymap Known Issues:
@@ -312,7 +322,9 @@ keymap Known Issues:
 
 
 keymap Version History:
-13.01 - F13: Fixed error with mapping.
+13.02 - F13: Added Function 13.
+	  - Corrected version counting.
+13.01 - F12: Fixed error with mapping.
 13.00 - Maps "Ctrl"+"`" to set/unset the active window as always on top.
 12.02 - F10: Added "seqta".
 12.01 - F10: Edited grammar.
