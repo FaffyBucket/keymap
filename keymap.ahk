@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             13.02 (version history at the bottom of this script)                    *
+* Version:             13.03 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -86,8 +86,8 @@ NumLock::
 	}
 	else
 	{
-;		Run calculator://
-		Run calc
+		Run calculator://
+;		Run calc
 		WinActivate, Calculator
 	}		
 	return
@@ -321,6 +321,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+13.03 - F1: Updated to launch calculator://
 13.02 - F13: Added Function 13.
 	  - Corrected version counting.
 13.01 - F12: Fixed error with mapping.

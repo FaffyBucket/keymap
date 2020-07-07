@@ -86,8 +86,8 @@ NumLock::
 	}
 	else
 	{
-;		Run calculator://
-		Run calc
+		Run calculator://
+;		Run calc
 		WinActivate, Calculator
 	}		
 	return
@@ -310,7 +310,6 @@ Run "D:\Install Files\AutoHotkey\Windowed-Game-Control\Windowed Game Control.ahk
 
 ^!+Del::
 Process, Close, explorer.exe
-;Run, notepad.exe
 
 
 
