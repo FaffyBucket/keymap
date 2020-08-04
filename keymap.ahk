@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             13.03 (version history at the bottom of this script)                    *
+* Version:             13.04 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -129,12 +129,12 @@ Pause::
 ScrollLock::
 	if (toggle = 0)
 	{
-		Run, Powershell Set-AudioDevice -Index 1
+		Run, Powershell Set-AudioDevice -Index 3
 		toggle = 1
 	}
 	else if (toggle = 1)
 	{
-		Run, Powershell Set-AudioDevice -Index 2
+		Run, Powershell Set-AudioDevice -Index 1
 		toggle = 0
 	}
 	return
@@ -321,6 +321,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+13.04 - Updated Function 3 because Windows Update changed the order.
 13.03 - F1: Updated to launch calculator://
 13.02 - F13: Added Function 13.
 	  - Corrected version counting.
