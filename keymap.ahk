@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             13.05 (version history at the bottom of this script)                    *
+* Version:             14.00 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -124,6 +124,8 @@ Pause::
 
 
 
+/* Ended Function 3
+************************************************************************************************
 ; 3. Maps Scroll lock key to switch playback device using PowerShell and AudioDeviceCmdlets.dll.
 
 ScrollLock::
@@ -138,6 +140,7 @@ ScrollLock::
 		toggle = 0
 	}
 	return
+/*
 /* Legacy Function 3
 ***********************************************************************************************
 ; 3. Maps Scroll lock key to switch playback device between second and third device in the list
@@ -321,6 +324,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+14.00 - Removed Function 3.
 13.05 - F3: Updated because Windows changed the order again.
 13.04 - Updated Function 3 because Windows Update changed the order.
 13.03 - F1: Updated to launch calculator://
