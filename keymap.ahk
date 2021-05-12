@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             15.00 (version history at the bottom of this script)                    *
+* Version:             15.01 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -297,14 +297,17 @@ matthiew
 ; 11. Launch Windowed Game Control with Ctrl+Alt+F1
 
 ^!F1::
-Run "D:\Install Files\AutoHotkey\Windowed-Game-Control\Windowed Game Control.ahk"
+	Run "D:\Install Files\AutoHotkey\Windowed-Game-Control\Windowed Game Control.ahk"
+	return
 
 
 
 
 ; 12. Toggle Always On Top with Ctrl+`
 
-^`::  Winset, Alwaysontop, , A
+^`::
+	Winset, Alwaysontop, , A
+	return
 
 
 
@@ -312,7 +315,8 @@ Run "D:\Install Files\AutoHotkey\Windowed-Game-Control\Windowed Game Control.ahk
 ; 13. Restart Explorer with Ctrl+Alt+Shift+Del
 
 ^!+Del::
-Process, Close, explorer.exe
+	Process, Close, explorer.exe
+	return
 
 
 
@@ -342,6 +346,8 @@ keymap Known Issues:
 
 
 keymap Version History:
+15.01 - Added returns to functions that were missing them, to prevent muliple functions being
+		triggered.
 15.00 - Added Function 14: Transparency toggle.
 14.00 - Removed Function 3.
 13.05 - F3: Updated because Windows changed the order again.
