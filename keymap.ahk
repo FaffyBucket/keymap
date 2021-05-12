@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             14.00 (version history at the bottom of this script)                    *
+* Version:             15.00 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -221,7 +221,7 @@ AppsKey & Ctrl::
 	
 	
 
-; 9. For keyboards that don't have media keys.
+; 9. Media shortcuts for keyboards that don't have media keys.
 
 !.::Media_Next    ; Assigns "Media_Next" to "Alt"+".".
 !,::Media_Prev    ; Assigns "Media_Prev" to "Alt"+",".
@@ -294,7 +294,7 @@ matthiew
 
 
 
-; 11. Windowed Game Control
+; 11. Launch Windowed Game Control with Ctrl+Alt+F1
 
 ^!F1::
 Run "D:\Install Files\AutoHotkey\Windowed-Game-Control\Windowed Game Control.ahk"
@@ -302,17 +302,35 @@ Run "D:\Install Files\AutoHotkey\Windowed-Game-Control\Windowed Game Control.ahk
 
 
 
-; 12. Always On Top
+; 12. Toggle Always On Top with Ctrl+`
 
 ^`::  Winset, Alwaysontop, , A
 
 
 
 
-; 13. Restart Explorer
+; 13. Restart Explorer with Ctrl+Alt+Shift+Del
 
 ^!+Del::
 Process, Close, explorer.exe
+
+
+
+
+; 14. Transparency toggle with Ctrl+Alt+`
+
+^!`::
+	if (toggle = 0)
+	{
+		WinSet, Transparent, 191, A
+		toggle = 1
+	}
+	else if (toggle = 1)
+	{
+		WinSet, Transparent, 255, A
+		toggle = 0
+	}
+	return
 
 
 
@@ -324,6 +342,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+15.00 - Added Function 14: Transparency toggle.
 14.00 - Removed Function 3.
 13.05 - F3: Updated because Windows changed the order again.
 13.04 - Updated Function 3 because Windows Update changed the order.
@@ -366,7 +385,7 @@ keymap Version History:
 11.3 - Updated Function 10.
 11.2 - Updated Function 10.
 11.1 - Added to Function 10.
-11.0 - Added Funciton 11.
+11.0 - Added Function 11.
 10.6 - Added to Function 10.
 10.5 - Added to Function 10.
 10.4 - Added to Function 10.
