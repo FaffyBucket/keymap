@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             15.01 (version history at the bottom of this script)                    *
+* Version:             15.02 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -326,7 +326,7 @@ matthiew
 ^!`::
 	if (toggle = 0)
 	{
-		WinSet, Transparent, 191, A
+		WinSet, Transparent, 127, A
 		toggle = 1
 	}
 	else if (toggle = 1)
@@ -346,6 +346,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+15.02 - F14: Changed transparency level to 127.
 15.01 - Added returns to functions that were missing them, to prevent muliple functions being
 		triggered.
 15.00 - Added Function 14: Transparency toggle.
