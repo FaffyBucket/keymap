@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             15.02 (version history at the bottom of this script)                    *
+* Version:             15.03 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -260,14 +260,18 @@ AppsKey & Ctrl::
 ::rn::right now
 :*:sbb::Surface Book
 :*:sb2::Surface Book 2
+:*:sb3::Surface Book 3
 :*:seqta::SEQTA
+:*:sgg::Surface Go
+:*:sg2::Surface Go 2
 :*:sll::Surface Laptop
 :*:sl2::Surface Laptop 2
+:*:sl3::Surface Laptop 3
 ::secs::seconds
-:C1:sp3::Surface Pro 3
-:C1:sp4::Surface Pro 4
-:C1:sp5::Surface Pro 5
-:C1:sp6::Surface Pro 6
+:*:sp3::Surface Pro 3
+:*:sp4::Surface Pro 4
+:*:sp5::Surface Pro 5
+:*:sp6::Surface Pro 6
 :*:zhh::
 (
 Helpdesk job:    Organisers: 
@@ -280,7 +284,7 @@ Request details:
 (
 
 
-Your account has not been hacked. They are trying to trick you. Please report the messages by doing the following:
+Your account has not been hacked. They are trying to con you. Please report the messages by doing the following:
 Right-click on the message.
 Select Junk.
 Select Report as Phishing.
@@ -346,6 +350,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+15.03 - F10: Added multiple text expansions for Surface devices.
 15.02 - F14: Changed transparency level to 127.
 15.01 - Added returns to functions that were missing them, to prevent muliple functions being
 		triggered.
