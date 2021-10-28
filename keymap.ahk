@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             15.03 (version history at the bottom of this script)                    *
+* Version:             15.04 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -268,7 +268,7 @@ AppsKey & Ctrl::
 :*:sl2::Surface Laptop 2
 :*:sl3::Surface Laptop 3
 ::secs::seconds
-:*:sp3::Surface Pro 3
+::sp3::Surface Pro 3
 :*:sp4::Surface Pro 4
 :*:sp5::Surface Pro 5
 :*:sp6::Surface Pro 6
@@ -350,6 +350,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+15.04 - F10: Adjusted "Surface Pro 3" text expansion.
 15.03 - F10: Added multiple text expansions for Surface devices.
 15.02 - F14: Changed transparency level to 127.
 15.01 - Added returns to functions that were missing them, to prevent muliple functions being
