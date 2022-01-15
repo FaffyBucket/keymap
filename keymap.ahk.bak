@@ -298,9 +298,9 @@ matthiew
 
 
 
-; 11. Launch Windowed Game Control with Ctrl+Alt+F1
+; 11. Launch Windowed Game Control with Ctrl+Shift+F1
 
-^!F1::
+^+F1::
 	Run "D:\Install Files\AutoHotkey\Windowed-Game-Control\Windowed Game Control.ahk"
 	return
 
@@ -350,7 +350,7 @@ keymap Known Issues:
 
 
 keymap Version History:
-15.04 - 
+15.04 - F10: Adjusted "Surface Pro 3" text expansion.
 15.03 - F10: Added multiple text expansions for Surface devices.
 15.02 - F14: Changed transparency level to 127.
 15.01 - Added returns to functions that were missing them, to prevent muliple functions being

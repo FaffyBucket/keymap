@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             15.04 (version history at the bottom of this script)                    *
+* Version:             15.05 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -298,9 +298,9 @@ matthiew
 
 
 
-; 11. Launch Windowed Game Control with Ctrl+Alt+F1
+; 11. Launch Windowed Game Control with Ctrl+Shift+F1
 
-^!F1::
+^+F1::
 	Run "D:\Install Files\AutoHotkey\Windowed-Game-Control\Windowed Game Control.ahk"
 	return
 
@@ -350,6 +350,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+15.04 - F11: Changed shortcut to Ctrl+Shift+F1.
 15.04 - F10: Adjusted "Surface Pro 3" text expansion.
 15.03 - F10: Added multiple text expansions for Surface devices.
 15.02 - F14: Changed transparency level to 127.
