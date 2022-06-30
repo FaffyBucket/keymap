@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             15.04 (version history at the bottom of this script)                    *
+* Version:             15.05 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -350,6 +350,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+15.04 - F11: Changed shortcut to Ctrl+Shift+F1.
 15.04 - F10: Adjusted "Surface Pro 3" text expansion.
 15.03 - F10: Added multiple text expansions for Surface devices.
 15.02 - F14: Changed transparency level to 127.

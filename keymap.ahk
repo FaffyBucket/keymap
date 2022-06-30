@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             15.05 (version history at the bottom of this script)                    *
+* Version:             15.06 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -89,7 +89,7 @@ NumLock::
 		Run calculator://
 ;		Run calc
 		WinActivate, Calculator
-	}		
+	}
 	return
 
 
@@ -102,7 +102,7 @@ Pause::
 	if A_TimeSinceThisHotkey < 1000
 		Drive, Eject, , 1
 	return
-	
+
 /* For multiple optical drives
 *****************************************
 Drive, Label, A:, ADrive
@@ -195,18 +195,18 @@ ScrollLock::
 AppsKey & L::
 	DllCall("LockWorkStation")
 	return
-	
-	
-	
-	
+
+
+
+
 ; 7. For laptops that don't have an RWin key. Assigns RWin to AppsKey+Ctrl for right-handed use.
 
 AppsKey & Ctrl::
 	Send {RWin}
 	return
-	
-	
-	
+
+
+
 
 ; 8. Maps Ctrl+Shift+/ to autocomplete URLs that end with ".com.au".
 
@@ -217,9 +217,9 @@ AppsKey & Ctrl::
 	Send www.^v.com.au
 	Send {Enter}
 	return
-	
-	
-	
+
+
+
 
 ; 9. Media shortcuts for keyboards that don't have media keys.
 
@@ -264,6 +264,7 @@ AppsKey & Ctrl::
 :*:seqta::SEQTA
 :*:sgg::Surface Go
 :*:sg2::Surface Go 2
+:*:sg3::Surface Go 3
 :*:sll::Surface Laptop
 :*:sl2::Surface Laptop 2
 :*:sl3::Surface Laptop 3
@@ -274,7 +275,7 @@ AppsKey & Ctrl::
 :*:sp6::Surface Pro 6
 :*:zhh::
 (
-Helpdesk job:    Organisers: 
+Helpdesk job:    Organisers:
 Technician: matthiew
 
 Request details:
@@ -350,6 +351,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+15.06 - F10: Added SG3 text expansion.
 15.04 - F11: Changed shortcut to Ctrl+Shift+F1.
 15.04 - F10: Adjusted "Surface Pro 3" text expansion.
 15.03 - F10: Added multiple text expansions for Surface devices.
