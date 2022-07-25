@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             15.06 (version history at the bottom of this script)                    *
+* Version:             15.07 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -253,6 +253,7 @@ AppsKey & Ctrl::
 ::fmp::FollowMePrint
 ::gfx::graphics card
 ::hddd::hard drive
+:*:iff::If your maps app takes you to Cambridge St instead of Salvado Rd, you need to turn left at the lights, and left again at the next lights.
 ::mins::minutes
 ::mss::Microsoft
 ::pcc::computer
@@ -351,6 +352,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+15.07 - F10: Added "iff".
 15.06 - F10: Added SG3 text expansion.
 15.04 - F11: Changed shortcut to Ctrl+Shift+F1.
 15.04 - F10: Adjusted "Surface Pro 3" text expansion.
@@ -376,7 +378,7 @@ keymap Version History:
 11.27 - F10: Added "mss".
 11.26 - F11: Updated shortcut to Windowed Game Control.
 11.25 - F1: Updated to run calc again.
-11.24 - F10: Added "zjj"
+11.24 - F10: Added "zjj".
 11.23 - F10: Added "sp5".
 11.22 - F10: Added "sb2".
 11.21 - F10: Added "sll".
