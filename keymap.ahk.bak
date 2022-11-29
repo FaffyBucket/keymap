@@ -253,7 +253,7 @@ AppsKey & Ctrl::
 ::fmp::FollowMePrint
 ::gfx::graphics card
 ::hddd::hard drive
-::iff::If your maps app takes you to Cambridge St instead of Salvado Rd, you need to turn left at the lights, and left again at the next lights.
+:*:iff::If your maps app takes you to Cambridge St instead of Salvado Rd, you need to turn left at the lights, and left again at the next lights.
 ::mins::minutes
 ::mss::Microsoft
 ::pcc::computer

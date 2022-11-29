@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             15.07 (version history at the bottom of this script)                    *
+* Version:             15.08 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -248,33 +248,33 @@ AppsKey & Ctrl::
 
 ::admini::administrator
 ::atm::at the moment
-:*:avv::AV set up complete
+;:*:avv::AV set up complete
 ::btww::by the way
-::fmp::FollowMePrint
+;::fmp::FollowMePrint
 ::gfx::graphics card
 ::hddd::hard drive
 :*:iff::If your maps app takes you to Cambridge St instead of Salvado Rd, you need to turn left at the lights, and left again at the next lights.
 ::mins::minutes
 ::mss::Microsoft
 ::pcc::computer
-:*:rcc::Rollover complete
+;:*:rcc::Rollover complete
 ::rn::right now
-:*:sbb::Surface Book
-:*:sb2::Surface Book 2
-:*:sb3::Surface Book 3
-:*:seqta::SEQTA
-:*:sgg::Surface Go
-:*:sg2::Surface Go 2
-:*:sg3::Surface Go 3
+;:*:sbb::Surface Book
+;:*:sb2::Surface Book 2
+;:*:sb3::Surface Book 3
+;:*:seqta::SEQTA
+;:*:sgg::Surface Go
+;:*:sg2::Surface Go 2
+;:*:sg3::Surface Go 3
 :*:sll::Surface Laptop
-:*:sl2::Surface Laptop 2
-:*:sl3::Surface Laptop 3
+;:*:sl2::Surface Laptop 2
+;:*:sl3::Surface Laptop 3
 ::secs::seconds
-::sp3::Surface Pro 3
-:*:sp4::Surface Pro 4
-:*:sp5::Surface Pro 5
-:*:sp6::Surface Pro 6
-:*:zhh::
+;::sp3::Surface Pro 3
+;:*:sp4::Surface Pro 4
+;:*:sp5::Surface Pro 5
+;:*:sp6::Surface Pro 6
+;:*:zhh::
 (
 Helpdesk job:    Organisers:
 Technician: matthiew
@@ -282,7 +282,7 @@ Technician: matthiew
 Request details:
 
 )
-:*:zjj::
+;:*:zjj::
 (
 
 
@@ -294,8 +294,8 @@ Kind regards,
 
 matthiew
 )
-:*:zrr::Password reset
-:*:zuu::Upgrade complete
+;:*:zrr::Password reset
+;:*:zuu::Upgrade complete
 
 
 
@@ -352,6 +352,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+15.08 - F10: Removed obsolete items.
 15.07 - F10: Added "iff".
 15.06 - F10: Added SG3 text expansion.
 15.04 - F11: Changed shortcut to Ctrl+Shift+F1.
