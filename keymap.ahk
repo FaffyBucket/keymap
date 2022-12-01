@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             15.08 (version history at the bottom of this script)                    *
+* Version:             15.09 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -66,29 +66,38 @@ AppsKey::AppsKey
 
 SetNumLockState, AlwaysOn
 NumLock::
-	IfWinExist, ahk_exe vmconnect.exe
+; Pressing Num Lock when a Hyper-V VM is running (active?) triggers multiple NumLock "keypresses". Sleep to ignore them.
+; THE FOLLOWING COMMENTED SECTION SHOULD BE CLEANED UP IF THE SLEEP WORKS. AND Reload.ahk SHOULD BE DELETED.
+;	IfWinExist, ahk_exe vmconnect.exe
+;	{
+;		Run, Reload.ahk
+;		ExitApp
+;	}
+	IfWinActive, ahk_exe vmconnect.exe
 	{
-		Run, Reload.ahk
-		ExitApp
-	}
-	#MaxHotkeysPerInterval 70
-	SetNumLockState, AlwaysOn
-	IfWinExist, Calculator
-	{
-		IfWinActive, Calculator
-		{
-			WinClose, Calculator
-		}
-		else
-		{
-			WinActivate, Calculator
-		}
+		Sleep 1000
 	}
 	else
 	{
-		Run calculator://
-;		Run calc
-		WinActivate, Calculator
+		#MaxHotkeysPerInterval 70
+		SetNumLockState, AlwaysOn
+		IfWinExist, Calculator
+		{
+			IfWinActive, Calculator
+			{
+				WinClose, Calculator
+			}
+			else
+			{
+				WinActivate, Calculator
+			}
+		}
+		else
+		{
+			Run calculator://
+	;		Run calc
+			WinActivate, Calculator
+		}
 	}
 	return
 
@@ -352,6 +361,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+15.09 - F1: Updated section to improve compatibility with Hyper-V.
 15.08 - F10: Removed obsolete items.
 15.07 - F10: Added "iff".
 15.06 - F10: Added SG3 text expansion.
