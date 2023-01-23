@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             15.10 (version history at the bottom of this script)                    *
+* Version:             15.11 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -265,6 +265,7 @@ AppsKey & Ctrl::
 ::mss::Microsoft
 ::pcc::computer
 ::rra::RealtyAssist
+::@ra::@realtyassist.com.au
 ::rn::right now
 :*:sll::Surface Laptop
 ;:*:sl2::Surface Laptop 2
@@ -344,6 +345,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+15.11 - F10: Added "@ra".
 15.10 - F10: Added "rra". Cleaned up old comments.
 15.09 - F1: Updated section to improve compatibility with Hyper-V.
 15.08 - F10: Removed obsolete items.
