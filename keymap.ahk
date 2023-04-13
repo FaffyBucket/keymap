@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             15.11 (version history at the bottom of this script)                    *
+* Version:             15.12 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -35,11 +35,13 @@
 ************************************************************************************************
 */
 
+/*
 if not A_IsAdmin
 {
 	Run *RunAs "%A_AhkPath%" keymap.ahk
 	ExitApp
 }
+*/
 
 
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
@@ -345,6 +347,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+15.12 - Removed elevation to Administrator privileges.
 15.11 - F10: Added "@ra".
 15.10 - F10: Added "rra". Cleaned up old comments.
 15.09 - F1: Updated section to improve compatibility with Hyper-V.

@@ -345,6 +345,7 @@ keymap Known Issues:
 
 
 keymap Version History:
+15.11 - F10: Added "@ra".
 15.10 - F10: Added "rra". Cleaned up old comments.
 15.09 - F1: Updated section to improve compatibility with Hyper-V.
 15.08 - F10: Removed obsolete items.
