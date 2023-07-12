@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             15.13 (version history at the bottom of this script)                    *
+* Version:             15.14 (version history at the bottom of this script)                    *
 * AutoHotkey Version:  1.1                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -256,6 +256,7 @@ AppsKey & Ctrl::
 
 ; 10. Text expansion
 
+::abn::72639613808
 ::admini::administrator
 ::atm::at the moment
 ::btww::by the way
@@ -276,7 +277,9 @@ AppsKey & Ctrl::
 ;:*:sp4::Surface Pro 4
 ;:*:sp5::Surface Pro 5
 ;:*:sp6::Surface Pro 6
-;:*:zjj::
+::tel::1300 355 729
+/*
+:*:zjj::
 (
 
 
@@ -288,6 +291,7 @@ Kind regards,
 
 matthiew
 )
+*/
 ;:*:zrr::Password reset
 ;:*:zuu::Upgrade complete
 
@@ -346,6 +350,8 @@ keymap Known Issues:
 
 
 keymap Version History:
+15.14 - F10: Added "abn".
+      - F10: Added "tel".
 15.13 - Returned Administrator privileges.
 15.12 - Removed elevation to Administrator privileges.
 15.11 - F10: Added "@ra".
