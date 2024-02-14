@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             16.00 (version history at the bottom of this script)                    *
+* Version:             16.01                                                                   *
 * AutoHotkey Version:  2.0                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -126,6 +126,7 @@ F1 - Issues with Hyper-V. See keymap15.ahk for more details, and a workaround.
 
 
 keymap Version History:
+16.01 - Updated documentation.
 16.00 - First version of keymap for AHK2.0.
       - All functions removed.
 	  - New icon.
