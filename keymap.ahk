@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             16.01                                                                   *
+* Version:             17.00                                                                   *
 * AutoHotkey Version:  2.0                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -20,6 +20,7 @@
 *    Assigns "Volume_Up" to "Alt"+"=".                                                         *
 *    Assigns "Volume_Down" to "Alt"+"-".                                                       *
 *    Assigns "Volume_Mute" to "Alt"+"0".                                                       *
+* 5. Maps Ctrl+Alt+Shift+Del to restart Explorer											   *
 ************************************************************************************************
 */
 
@@ -93,7 +94,7 @@ NumLock::
 
 
 
-; * 4. Media playback shortcuts which can be used consistenly with any keyboard
+; 4. Media playback shortcuts which can be used consistenly with any keyboard
 
 !.::Media_Next    ; Assigns "Media_Next" to "Alt"+".".
 !,::Media_Prev    ; Assigns "Media_Prev" to "Alt"+",".
@@ -118,6 +119,16 @@ NumLock::
 
 
 
+; 5. Restart Explorer with Ctrl+Alt+Shift+Del
+
+^!+Del::
+{
+	ProcessClose "explorer.exe"
+}
+
+
+
+
 /*
 ************************************************************************************************
 keymap Known Issues:
@@ -126,6 +137,7 @@ F1 - Issues with Hyper-V. See keymap15.ahk for more details, and a workaround.
 
 
 keymap Version History:
+17.00 - Added F5: Recreated the Restart Explorer hotkey from keymap15 (F13).
 16.01 - Updated documentation.
 16.00 - First version of keymap for AHK2.0.
       - All functions removed.
