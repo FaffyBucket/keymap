@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             17.01                                                                   *
+* Version:             17.02                                                                   *
 * AutoHotkey Version:  2.0                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -53,7 +53,7 @@ NumLock::
 	else
 	{
 		Run "calculator://"
-		Sleep 300
+		Sleep 400
 		WinActivate "Calculator"
 	}
 	return
@@ -137,6 +137,7 @@ F1 - Issues with Hyper-V. See keymap15.ahk for more details, and a workaround.
 
 
 keymap Version History:
+17.02 - F1: Increased sleep time to reduce errors detecting the Calculator window.
 17.01 - F1: Increased sleep time to reduce errors detecting the Calculator window.
 17.00 - Added F5: Recreated the Restart Explorer hotkey from keymap15 (F13).
 16.01 - Updated documentation.
