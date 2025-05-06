@@ -2,7 +2,7 @@
 ************************************************************************************************
 * keymap                                                                                       *
 *                                                                                              *
-* Version:             17.02                                                                   *
+* Version:             18.00                                                                   *
 * AutoHotkey Version:  2.0                                                                     *
 * Language:            English                                                                 *
 * Platform:            Windows 10                                                              *
@@ -21,6 +21,7 @@
 *    Assigns "Volume_Down" to "Alt"+"-".                                                       *
 *    Assigns "Volume_Mute" to "Alt"+"0".                                                       *
 * 5. Maps Ctrl+Alt+Shift+Del to restart Explorer											   *
+* 6. Text expansion.                                                                           *
 ************************************************************************************************
 */
 
@@ -129,6 +130,26 @@ NumLock::
 
 
 
+; 6. Text expansion
+
+::@ma::matthiew.marks@realtyassist.com.au
+::@mm::mmarks@realtyassist.com.au
+::@ra::@realtyassist.com.au
+::admini::administrator
+::atm::at the moment
+::btww::by the way
+::gfx::graphics card
+::hddd::hard drive
+::mins::minutes
+::mss::Microsoft
+::pcc::computer
+::rra::RealtyAssist
+::rn::right now
+::secs::seconds
+
+
+
+
 /*
 ************************************************************************************************
 keymap Known Issues:
@@ -137,6 +158,7 @@ F1 - Issues with Hyper-V. See keymap15.ahk for more details, and a workaround.
 
 
 keymap Version History:
+18.00 - Added F6: Text expansion.
 17.02 - F1: Increased sleep time to reduce errors detecting the Calculator window.
 17.01 - F1: Increased sleep time to reduce errors detecting the Calculator window.
 17.00 - Added F5: Recreated the Restart Explorer hotkey from keymap15 (F13).
