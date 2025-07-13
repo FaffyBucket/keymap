@@ -1,28 +1,30 @@
 /*
-************************************************************************************************
-* keymap                                                                                       *
-*                                                                                              *
-* Version:             18.00                                                                   *
-* AutoHotkey Version:  2.0                                                                     *
-* Language:            English                                                                 *
-* Platform:            Windows 10                                                              *
-* Author:              www.twitter.com/matthiew                                                *
-*                                                                                              *
-* Script Function:                                                                             *
-* 1. Maps "Num Lock" key to open/activate/close the Windows calculator app.                    *
-* 2. Maps "Win"+"Shift"+"Left" shortcut to "Alt"+"`" so that moving a window to the next       *
-*    monitor can be done with just the left hand.                                              *
-* 3. Maps "Win"+"`" to maximise/restore the current window with just the left hand.            *
-* 4. Media playback shortcuts which can be used consistenly with any keyboard:                 *
-*    Assigns "Media_Next" to "Alt"+".".                                                        *
-*    Assigns "Media_Prev" to "Alt"+",".                                                        *
-*    Assigns "Media_Play_Pause" to "Alt"+"/".                                                  *
-*    Assigns "Volume_Up" to "Alt"+"=".                                                         *
-*    Assigns "Volume_Down" to "Alt"+"-".                                                       *
-*    Assigns "Volume_Mute" to "Alt"+"0".                                                       *
-* 5. Maps Ctrl+Alt+Shift+Del to restart Explorer											   *
-* 6. Text expansion.                                                                           *
-************************************************************************************************
+*************************************************************************************************
+* keymap                                                                                       	*
+*                                                                                              	*
+* Version:             19.00                                                                   	*
+* AutoHotkey Version:  2.0                                                                     	*
+* Language:            English                                                                 	*
+* Platform:            Windows 10                                                              	*
+* Author:              www.twitter.com/matthiew                                                	*
+*                                                                                              	*
+* Script Function:                                                                             	*
+* 1. Maps "Num Lock" key to open/activate/close the Windows calculator app.                    	*
+* 2. Maps "Win+Shift+Left" shortcut to "Alt+`" so that moving a window to the next       		*
+*    monitor can be done with just the left hand.                                              	*
+* 3. Maps "Win+`" to maximise/restore the current window with just the left hand.            	*
+* 4. Media playback shortcuts which can be used consistenly with any keyboard:                 	*
+*    Assigns "Media_Next" to "Alt+.".                                                        	*
+*    Assigns "Media_Prev" to "Alt+,".                                                        	*
+*    Assigns "Media_Play_Pause" to "Alt+/".                                                		*
+*    Assigns "Volume_Up" to "Alt+=".                                                         	*
+*    Assigns "Volume_Down" to "Alt+-".                                                       	*
+*    Assigns "Volume_Mute" to "Alt+0".                                                       	*
+* 5. Maps "Ctrl+Alt+Shift+Del" to restart Explorer											    *
+* 6. Text expansion.                                                                            *
+* 7. Maps "Ctrl+`" to set/unset the active window as always on top.								*
+* 8. Maps "Ctrl+Alt+`" to set/unset 50% transparency on the active window.						*
+*************************************************************************************************
 */
 
 
@@ -125,6 +127,7 @@ NumLock::
 ^!+Del::
 {
 	ProcessClose "explorer.exe"
+	return
 }
 
 
@@ -150,6 +153,27 @@ NumLock::
 
 
 
+; 7. Always on top toggle - Ctrl+`
+
+^`::
+{
+	WinSetAlwaysOnTop -1, "A"
+	return
+}
+
+
+
+
+; 8. Transparency toggle - Ctrl+Alt+`
+
+^!`::
+{
+	WinSetTransparent(WinGetTransparent('A') ? "" : 50, 'A')
+}
+
+
+
+
 /*
 ************************************************************************************************
 keymap Known Issues:
@@ -158,6 +182,8 @@ F1 - Issues with Hyper-V. See keymap15.ahk for more details, and a workaround.
 
 
 keymap Version History:
+19.00 - Added F7: Recreated the "always on top" shortcut from keymap15.	
+	  - Added F8: Recreated the transparency shortcut from keymap15.
 18.00 - Added F6: Text expansion.
 17.02 - F1: Increased sleep time to reduce errors detecting the Calculator window.
 17.01 - F1: Increased sleep time to reduce errors detecting the Calculator window.
