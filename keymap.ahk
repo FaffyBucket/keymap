@@ -2,7 +2,7 @@
 *************************************************************************************************
 * keymap                                                                                       	*
 *                                                                                              	*
-* Version:             19.00                                                                   	*
+* Version:             19.01                                                                   	*
 * AutoHotkey Version:  2.0                                                                     	*
 * Language:            English                                                                 	*
 * Platform:            Windows 10                                                              	*
@@ -32,6 +32,7 @@
 
 #Requires AutoHotkey v2.0
 #SingleInstance Force
+SetTitleMatchMode 3
 TraySetIcon ("map.ico")
 
 
@@ -182,6 +183,8 @@ F1 - Issues with Hyper-V. See keymap15.ahk for more details, and a workaround.
 
 
 keymap Version History:
+19.01 - Updated F1: Set title match mode to exactly match. This will now ignore other windows
+	  - with "Calculator" in the title.
 19.00 - Added F7: Recreated the "always on top" shortcut from keymap15.	
 	  - Added F8: Recreated the transparency shortcut from keymap15.
 18.00 - Added F6: Text expansion.
