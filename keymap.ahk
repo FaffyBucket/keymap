@@ -2,7 +2,7 @@
 *************************************************************************************************
 * keymap                                                                                       	*
 *                                                                                              	*
-* Version:             19.01                                                                   	*
+* Version:             19.02                                                                   	*
 * AutoHotkey Version:  2.0                                                                     	*
 * Language:            English                                                                 	*
 * Platform:            Windows 10                                                              	*
@@ -10,6 +10,8 @@
 *                                                                                              	*
 * Script Function:                                                                             	*
 * 1. Maps "Num Lock" key to open/activate/close the Windows calculator app.                    	*
+* 1.1. Maps "Shift+NumLock" to enable NumLock.													*
+* 1.2. Maps "Alt+NumLock" to disable NumLock.													*
 * 2. Maps "Win+Shift+Left" shortcut to "Alt+`" so that moving a window to the next       		*
 *    monitor can be done with just the left hand.                                              	*
 * 3. Maps "Win+`" to maximise/restore the current window with just the left hand.            	*
@@ -40,7 +42,7 @@ TraySetIcon ("map.ico")
 
 ; 1. Maps Num Lock key to open/activate/close Calculator.exe
 
-SetNumLockState "AlwaysOn"
+;SetNumLockState "AlwaysOn"
 NumLock::
 {
 	if WinExist("Calculator")
@@ -62,6 +64,12 @@ NumLock::
 	}
 	return
 }
+
+; 1.1. Maps Shift+NumLock to toggle NumLock
++NumLock::SetNumLockState True
+
+; 1.2. Maps Alt+NumLock to disable NumLock
+!NumLock::SetNumLockState False
 
 
 
@@ -183,6 +191,10 @@ F1 - Issues with Hyper-V. See keymap15.ahk for more details, and a workaround.
 
 
 keymap Version History:
+19.02 - Updated F1
+	  - Removed NumLock always on.
+	  - Added 1.1. Maps "Shift+NumLock" to enable NumLock.
+	  - Added 1.2. Maps "Alt+NumLock" to disable NumLock.
 19.01 - Updated F1: Set title match mode to exactly match. This will now ignore other windows
 	  - with "Calculator" in the title.
 19.00 - Added F7: Recreated the "always on top" shortcut from keymap15.	
