@@ -2,7 +2,7 @@
 *************************************************************************************************
 * keymap                                                                                       	*
 *                                                                                              	*
-* Version:             19.02                                                                   	*
+* Version:             19.03                                                                   	*
 * AutoHotkey Version:  2.0                                                                     	*
 * Language:            English                                                                 	*
 * Platform:            Windows 10                                                              	*
@@ -42,7 +42,7 @@ TraySetIcon ("map.ico")
 
 ; 1. Maps Num Lock key to open/activate/close Calculator.exe
 
-;SetNumLockState "AlwaysOn"
+SetNumLockState "On"
 NumLock::
 {
 	if WinExist("Calculator")
@@ -191,6 +191,7 @@ F1 - Issues with Hyper-V. See keymap15.ahk for more details, and a workaround.
 
 
 keymap Version History:
+19.03 - Updated F1: SetNumLockState "On" at script launch.
 19.02 - Updated F1
 	  - Removed NumLock always on.
 	  - Added 1.1. Maps "Shift+NumLock" to enable NumLock.
