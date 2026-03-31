@@ -2,7 +2,7 @@
 *************************************************************************************************
 * keymap                                                                                       	*
 *                                                                                              	*
-* Version:             19.03                                                                   	*
+* Version:             19.04                                                                   	*
 * AutoHotkey Version:  2.0                                                                     	*
 * Language:            English                                                                 	*
 * Platform:            Windows 10                                                              	*
@@ -144,10 +144,10 @@ NumLock::
 
 ; 6. Text expansion
 
-::@ma::matthiew.marks@realtyassist.com.au
-::@mm::mmarks@realtyassist.com.au
-::@ra::@realtyassist.com.au
-::admini::administrator
+::@ma::matthiew.marks@sonshine.com.au
+::@mm::mmarks@sonshine.com.au
+::@son::@sonshine.com.au
+::admn::administrator
 ::atm::at the moment
 ::btww::by the way
 ::gfx::graphics card
@@ -155,9 +155,9 @@ NumLock::
 ::mins::minutes
 ::mss::Microsoft
 ::pcc::computer
-::rra::RealtyAssist
 ::rn::right now
 ::secs::seconds
+::Son::sonshine
 
 
 
@@ -191,6 +191,7 @@ F1 - Issues with Hyper-V. See keymap15.ahk for more details, and a workaround.
 
 
 keymap Version History:
+19.04 - F6: Updated text expansion.
 19.03 - Updated F1: SetNumLockState "On" at script launch.
 19.02 - Updated F1
 	  - Removed NumLock always on.
