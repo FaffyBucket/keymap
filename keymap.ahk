@@ -2,7 +2,7 @@
 *************************************************************************************************
 * keymap                                                                                       	*
 *                                                                                              	*
-* Version:             19.05                                                                   	*
+* Version:             19.06                                                                   	*
 * AutoHotkey Version:  2.0                                                                     	*
 * Language:            English                                                                 	*
 * Platform:            Windows 10                                                              	*
@@ -150,7 +150,6 @@ NumLock::
 ::admn::administrator
 ::atm::at the moment
 ::btww::by the way
-::gfx::graphics card
 ::hddd::hard drive
 ::mins::minutes
 ::mss::Microsoft
@@ -190,6 +189,7 @@ F1 - Issues with Hyper-V. See keymap15.ahk for more details, and a workaround.
 
 
 keymap Version History:
+19.06 - F6: Updated text expansion.
 19.05 - F6: Updated text expansion.
 19.04 - F6: Updated text expansion.
 19.03 - Updated F1: SetNumLockState "On" at script launch.
