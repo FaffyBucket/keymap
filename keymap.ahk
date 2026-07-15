@@ -2,7 +2,7 @@
 *************************************************************************************************
 * keymap                                                                                       	*
 *                                                                                              	*
-* Version:             19.06                                                                   	*
+* Version:             20.00                                                                   	*
 * AutoHotkey Version:  2.0                                                                     	*
 * Language:            English                                                                 	*
 * Platform:            Windows 10                                                              	*
@@ -26,6 +26,7 @@
 * 6. Text expansion.                                                                            *
 * 7. Maps "Ctrl+`" to set/unset the active window as always on top.								*
 * 8. Maps "Ctrl+Alt+`" to set/unset 50% transparency on the active window.						*
+* 9. Maps mouse buttons 4 and 5 to scroll horizontally in Audacity.								*
 *************************************************************************************************
 */
 
@@ -42,34 +43,34 @@ TraySetIcon ("map.ico")
 
 ; 1. Maps Num Lock key to open/activate/close Calculator.exe
 
-SetNumLockState "On"
-NumLock::
-{
-	if WinExist("Calculator")
+	SetNumLockState "On"
+	NumLock::
 	{
-		if WinActive("Calculator")
+		if WinExist("Calculator")
 		{
-			WinClose "Calculator"
+			if WinActive("Calculator")
+			{
+				WinClose "Calculator"
+			}
+			else
+			{
+				WinActivate "Calculator"
+			}
 		}
 		else
 		{
+			Run "calculator://"
+			Sleep 400
 			WinActivate "Calculator"
 		}
+		return
 	}
-	else
-	{
-		Run "calculator://"
-		Sleep 400
-		WinActivate "Calculator"
-	}
-	return
-}
 
 ; 1.1. Maps Shift+NumLock to toggle NumLock
-+NumLock::SetNumLockState True
+	+NumLock::SetNumLockState True
 
 ; 1.2. Maps Alt+NumLock to disable NumLock
-!NumLock::SetNumLockState False
+	!NumLock::SetNumLockState False
 
 
 
@@ -78,106 +79,157 @@ NumLock::
 ;    done with just the left hand. The Win+Shift+Left shortcut was introduced in Windows 7, so
 ;    this won't work in previous versions.
 
-!`::
-{
-	Send "#+{Right}"
-	return
-}
+	!`::
+	{
+		Send "#+{Right}"
+		return
+	}
 
 
 
 
 ; 3. Maps Win+` to maximise/restore the current window with just the left hand.
 
-#`::
-{
-	MinMax := WinGetMinMax("A")
-	if (MinMax = 1)
+	#`::
 	{
-		WinRestore "A"
+		MinMax := WinGetMinMax("A")
+		if (MinMax = 1)
+		{
+			WinRestore "A"
+		}
+		else
+		{
+			WinMaximize "A"
+		}
+		return
 	}
-	else
-	{
-		WinMaximize "A"
-	}
-	return
-}
 
 
 
 
 ; 4. Media playback shortcuts which can be used consistenly with any keyboard
 
-!.::Media_Next    ; Assigns "Media_Next" to "Alt"+".".
-!,::Media_Prev    ; Assigns "Media_Prev" to "Alt"+",".
-!/::    		  ; Assigns "Media_Play_Pause" to "Alt"+"/".
-{
-	ActiveProcess := WinGetProcessName("A")
-	if (ActiveProcess = "explorer.exe")
+	!.::Media_Next    ; Assigns "Media_Next" to "Alt"+".".
+	!,::Media_Prev    ; Assigns "Media_Prev" to "Alt"+",".
+	!/::    		  ; Assigns "Media_Play_Pause" to "Alt"+"/".
 	{
-		Send "{Tab}"
-		Send "{Media_Play_Pause}"
+		ActiveProcess := WinGetProcessName("A")
+		if (ActiveProcess = "explorer.exe")
+		{
+			Send "{Tab}"
+			Send "{Media_Play_Pause}"
+		}
+		else
+		{
+			Send "{Media_Play_Pause}"
+		}
+		return
 	}
-	else
-	{
-		Send "{Media_Play_Pause}"
-	}
-	return
-}
-!=::Volume_Up     ; Assigns "Volume_Up" to "Alt"+"=".
-!-::Volume_Down   ; Assigns "Volume_Down" to "Alt"+"-".
-!0::Volume_Mute   ; Assigns "Volume_Mute" to "Alt"+"0".
+	!=::Volume_Up     ; Assigns "Volume_Up" to "Alt"+"=".
+	!-::Volume_Down   ; Assigns "Volume_Down" to "Alt"+"-".
+	!0::Volume_Mute   ; Assigns "Volume_Mute" to "Alt"+"0".
 
 
 
 
 ; 5. Restart Explorer with Ctrl+Alt+Shift+Del
 
-^!+Del::
-{
-	ProcessClose "explorer.exe"
-	return
-}
+	^!+Del::
+	{
+		ProcessClose "explorer.exe"
+		return
+	}
 
 
 
 
 ; 6. Text expansion
 
-::m@::matthiew.marks@sonshine.com.au
-::mm@::mmarks@sonshine.com.au
-::@son::@sonshine.com.au
-::admn::administrator
-::atm::at the moment
-::btww::by the way
-::hddd::hard drive
-::mins::minutes
-::mss::Microsoft
-::pcc::computer
-::rn::right now
-::secs::seconds
+	::m@::matthiew.marks@sonshine.com.au
+	::mm@::mmarks@sonshine.com.au
+	::@son::@sonshine.com.au
+	::admn::administrator
+	::atm::at the moment
+	::btww::by the way
+	::hddd::hard drive
+	::mins::minutes
+	::mss::Microsoft
+	::pcc::computer
+	::rn::right now
+	::secs::seconds
 
 
 
 
 ; 7. Always on top toggle - Ctrl+`
 
-^`::
-{
-	WinSetAlwaysOnTop -1, "A"
-	return
-}
+	^`::
+	{
+		WinSetAlwaysOnTop -1, "A"
+		return
+	}
 
 
 
 
 ; 8. Transparency toggle - Ctrl+Alt+`
 
-^!`::
-{
-	WinSetTransparent(WinGetTransparent('A') ? "" : 50, 'A')
-}
+	^!`::
+	{
+		WinSetTransparent(WinGetTransparent('A') ? "" : 50, 'A')
+	}
 
+
+
+
+; 9. Horizontal scroll in Audacity with mouse buttons 4 and 5
+
+	XButton1::
+	{
+		XButton1Repeat()
+		SetTimer XButton1Repeat, 50
+		return
+	}
+	XButton1 Up::
+	{
+		SetTimer XButton1Repeat, 0
+		return
+	}
+	XButton1Repeat()
+	{
+		ActiveProcess := WinGetProcessName("A")
+		if (ActiveProcess = "audacity.exe")
+		{
+			Send "{WheelRight}"
+		}
+		else
+		{
+			Send "{XButton1}"
+		}
+	}
+	XButton2::
+	{
+		XButton2Repeat()
+		SetTimer XButton2Repeat, 50
+		return
+	}
+	XButton2 Up::
+	{
+		SetTimer XButton2Repeat, 0
+		return
+	}
+	XButton2Repeat()
+	{
+		ActiveProcess := WinGetProcessName("A")
+		if (ActiveProcess = "audacity.exe")
+		{
+			Send "{WheelLeft}"
+		}
+		else
+		{
+			Send "{XButton2}"
+		}
+	}
 
 
 
@@ -189,6 +241,7 @@ F1 - Issues with Hyper-V. See keymap15.ahk for more details, and a workaround.
 
 
 keymap Version History:
+20.00 - Created F9: Maps mouse buttons 4 and 5 to scroll horizontally in Audacity.
 19.06 - F6: Updated text expansion.
 19.05 - F6: Updated text expansion.
 19.04 - F6: Updated text expansion.
