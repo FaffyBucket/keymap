@@ -2,7 +2,7 @@
 *************************************************************************************************
 * keymap                                                                                       	*
 *                                                                                              	*
-* Version:             20.00                                                                   	*
+* Version:             20.01                                                                   	*
 * AutoHotkey Version:  2.0                                                                     	*
 * Language:            English                                                                 	*
 * Platform:            Windows 10                                                              	*
@@ -186,8 +186,16 @@ TraySetIcon ("map.ico")
 
 	XButton1::
 	{
-		XButton1Repeat()
-		SetTimer XButton1Repeat, 50
+		ActiveProcess := WinGetProcessName("A")
+		if (ActiveProcess = "audacity.exe")
+		{
+			XButton1Repeat()
+			SetTimer XButton1Repeat, 50
+		}
+		else
+		{
+			Send "{XButton1}"
+		}
 		return
 	}
 	XButton1 Up::
@@ -197,20 +205,23 @@ TraySetIcon ("map.ico")
 	}
 	XButton1Repeat()
 	{
-		ActiveProcess := WinGetProcessName("A")
-		if (ActiveProcess = "audacity.exe")
+		if (WinGetProcessName("A") = "audacity.exe")
 		{
 			Send "{WheelRight}"
-		}
-		else
-		{
-			Send "{XButton1}"
 		}
 	}
 	XButton2::
 	{
-		XButton2Repeat()
-		SetTimer XButton2Repeat, 50
+		ActiveProcess := WinGetProcessName("A")
+		if (ActiveProcess = "audacity.exe")
+		{
+			XButton2Repeat()
+			SetTimer XButton2Repeat, 50
+		}
+		else
+		{
+			Send "{XButton2}"
+		}
 		return
 	}
 	XButton2 Up::
@@ -220,14 +231,9 @@ TraySetIcon ("map.ico")
 	}
 	XButton2Repeat()
 	{
-		ActiveProcess := WinGetProcessName("A")
-		if (ActiveProcess = "audacity.exe")
+		if (WinGetProcessName("A") = "audacity.exe")
 		{
 			Send "{WheelLeft}"
-		}
-		else
-		{
-			Send "{XButton2}"
 		}
 	}
 
@@ -241,6 +247,7 @@ F1 - Issues with Hyper-V. See keymap15.ahk for more details, and a workaround.
 
 
 keymap Version History:
+20.01 - Updated F9 to fix error where mouse buttons were being sent repeatedly on a single click.
 20.00 - Created F9: Maps mouse buttons 4 and 5 to scroll horizontally in Audacity.
 19.06 - F6: Updated text expansion.
 19.05 - F6: Updated text expansion.
