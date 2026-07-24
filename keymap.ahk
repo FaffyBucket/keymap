@@ -2,7 +2,7 @@
 *************************************************************************************************
 * keymap                                                                                       	*
 *                                                                                              	*
-* Version:             20.01                                                                   	*
+* Version:             21.00                                                                   	*
 * AutoHotkey Version:  2.0                                                                     	*
 * Language:            English                                                                 	*
 * Platform:            Windows 10                                                              	*
@@ -27,6 +27,7 @@
 * 7. Maps "Ctrl+`" to set/unset the active window as always on top.								*
 * 8. Maps "Ctrl+Alt+`" to set/unset 50% transparency on the active window.						*
 * 9. Maps mouse buttons 4 and 5 to scroll horizontally in Audacity.								*
+* 10. Scroll Lock always disabled.																*
 *************************************************************************************************
 */
 
@@ -236,6 +237,18 @@ TraySetIcon ("map.ico")
 			Send "{WheelLeft}"
 		}
 	}
+	
+	
+	
+	
+; 10. Scroll Lock always disabled
+
+	ScrollLock::
+	{
+		Send "{ScrollLock}"
+		SetScrollLockState "Off"
+	}
+
 
 
 
@@ -247,6 +260,7 @@ F1 - Issues with Hyper-V. See keymap15.ahk for more details, and a workaround.
 
 
 keymap Version History:
+21.00 - Added F10: Scroll Lock always disabled.
 20.01 - Updated F9 to fix error where mouse buttons were being sent repeatedly on a single click.
 20.00 - Created F9: Maps mouse buttons 4 and 5 to scroll horizontally in Audacity.
 19.06 - F6: Updated text expansion.
